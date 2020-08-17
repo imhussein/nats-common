@@ -5,7 +5,7 @@ export class NotFoundError extends CustomError {
 
   constructor() {
     super("Route Does Not Exists In the Server");
-    Object.setPrototypeOf(this, NotFoundError);
+    Object.setPrototypeOf(this, NotFoundError.prototype);
   }
 
   serializeErrors() {
