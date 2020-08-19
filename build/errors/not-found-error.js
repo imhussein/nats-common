@@ -20,7 +20,7 @@ var NotFoundError = /** @class */ (function (_super) {
     function NotFoundError() {
         var _this = _super.call(this, "Route Does Not Exists In the Server") || this;
         _this.statusCode = 404;
-        Object.setPrototypeOf(_this, NotFoundError);
+        Object.setPrototypeOf(_this, NotFoundError.prototype);
         return _this;
     }
     NotFoundError.prototype.serializeErrors = function () {
